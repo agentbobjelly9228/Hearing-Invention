@@ -17,7 +17,7 @@ class hearingdevice():
             try:
                 said = r.recognize_google(audio, language="en")
             except:
-                return getAudio()
+                return self.getAudio()
         return said
 
 invention = hearingdevice()
